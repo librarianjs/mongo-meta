@@ -29,7 +29,7 @@ describe( 'librarian-mongo-meta', function(){
   })
 
   it( 'should retrieve that data', function( done ){
-    engine.get( dbRecord.id, function( err, data ){
+    engine.get( '' + dbRecord.id, function( err, data ){
       assert.ifError( err )
       assert( data !== null, 'Record is null' )
       assert( data !== false, 'Record pull failed' )
@@ -60,7 +60,7 @@ describe( 'librarian-mongo-meta', function(){
   it( 'should allow patching the filename', function( done ){
     var newFilename = 'chipmunks.png'
 
-    engine.patch( dbRecord.id, {
+    engine.patch( '' + dbRecord.id, {
       fileName: newFilename
     }, function( err, record ){
       assert.ifError( err )
