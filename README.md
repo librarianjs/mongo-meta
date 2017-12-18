@@ -1,3 +1,5 @@
+*Not compatible with librarian 2. Use librairan-mongo-data instead*
+
 # Librarian Mongo Meta
 
 ## Installation
